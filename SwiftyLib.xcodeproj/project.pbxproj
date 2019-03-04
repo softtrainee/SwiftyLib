@@ -17,6 +17,7 @@
 		E431C400222D3E0A00ED2491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E431C3FE222D3E0A00ED2491 /* LaunchScreen.storyboard */; };
 		E431C40B222D3E0A00ED2491 /* SwiftyLibExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431C40A222D3E0A00ED2491 /* SwiftyLibExamplesTests.swift */; };
 		E431C416222D3E0A00ED2491 /* SwiftyLibExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431C415222D3E0A00ED2491 /* SwiftyLibExamplesUITests.swift */; };
+		E431C422222D494F00ED2491 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431C421222D494F00ED2491 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E431C411222D3E0A00ED2491 /* SwiftyLibExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E431C415222D3E0A00ED2491 /* SwiftyLibExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibExamplesUITests.swift; sourceTree = "<group>"; };
 		E431C417222D3E0A00ED2491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E431C421222D494F00ED2491 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		E431C3CB222D3D5800ED2491 = {
 			isa = PBXGroup;
 			children = (
+				E431C421222D494F00ED2491 /* SwiftyLib.swift */,
 				E431C3D7222D3D5800ED2491 /* SwiftyLib */,
 				E431C3E2222D3D5800ED2491 /* SwiftyLibTests */,
 				E431C3F4222D3E0300ED2491 /* SwiftyLibExamples */,
@@ -293,6 +296,7 @@
 				TargetAttributes = {
 					E431C3D4222D3D5800ED2491 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E431C3DD222D3D5800ED2491 = {
 						CreatedOnToolsVersion = 10.1;
@@ -378,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E431C422222D494F00ED2491 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +584,7 @@
 		E431C3EA222D3D5900ED2491 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -596,6 +602,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ok..SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -604,6 +611,7 @@
 		E431C3EB222D3D5900ED2491 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -629,6 +637,7 @@
 		E431C3ED222D3D5900ED2491 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JK7J8E25BF;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
@@ -647,6 +656,7 @@
 		E431C3EE222D3D5900ED2491 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JK7J8E25BF;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
